@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="login-container">
+
+      <!-- leftside Heading starts here -->
+      <div class="content">
+        <div class="logo">
+          <h3>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="white" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16" style="cursor: pointer;">
+              <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z"/>
+            </svg> -->
+            POLICY CLOUD
+          </h3>
+        </div>
+        <br><br><br><br>
+        <p id="loginP1">Get ₹7400 to try PolicyCloud – and do all the below
+          for free!
+        </p><br>
+        <p id="loginP2">
+          Build apps, host websites, run open source software, learn 
+          cloud computing, and more – every cloud resource you need at an affordable price.
+        </p>
+        <br><br><br><br><br><br><br>
+      </div>
+      <!-- left side Heading ends here -->
+
+      <!-- Login box starts here -->
+      <div class="login">
+
+        <!-- login heading starts here -->
+        <div class="heading">
+          <p>Start your free trial with a ₹7400 credit for 60 days</p>
+        </div>
+        <!-- login heading starts here -->
+
+        <div class="input-container">
+
+          <!-- login input boxes and button starts here -->
+          <div class="input">
+            <form method="POST" action="http://localhost:8000/login">
+              <input id="emailInput" name="emailId" type="text" placeholder="Email Address" ><br>
+              <input id="pwdInput"  name="password" type="text" placeholder="Password" ><br>
+              <input id="login" type="submit" value="Sign in">
+              <!-- <button type="submit">
+                Login Account
+              </button> -->
+            </form>
+
+            <div class="login-choice">
+              <span>or Sign up with</span>
+            </div>
+
+            <div class="signup-buttons">
+              <button class="google-signup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                  <title>Google</title>
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#4285F4" d="M17.64 9.2045c0-.6381-.0573-1.2518-.1636-1.8409H9v3.4814h4.8436c-.2086 1.125-.8427 2.0782-1.7959 2.7164v2.2581h2.9087c1.7018-1.5668 2.6836-3.874 2.6836-6.615z"></path>
+                    <path fill="#34A853" d="M9 18c2.43 0 4.4673-.806 5.9564-2.1805l-2.9087-2.2581c-.8059.54-1.8368.859-3.0477.859-2.344 0-4.3282-1.5831-5.036-3.7104H.9574v2.3318C2.4382 15.9832 5.4818 18 9 18z"></path>
+                    <path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.2822-1.1168-.2822-1.71s.1023-1.17.2823-1.71V4.9582H.9573A8.9965 8.9965 0 0 0 0 9c0 1.4523.3477 2.8268.9573 4.0418L3.964 10.71z"></path>
+                    <path fill="#EA4335" d="M9 3.5795c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C13.4632.8918 11.426 0 9 0 5.4818 0 2.4382 2.0168.9573 4.9582L3.964 7.29C4.6718 5.1627 6.6559 3.5795 9 3.5795z"></path>
+                  </g>
+                </svg>
+                Google
+              </button>
+
+              <button class="google-signup" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bi bi-github" viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                GitHub
+              </button>
+            </div>
+
+            <div class="bottomP">
+              <p>₹7400, 60-day free trial requires valid credit card.By signing up, you agree to the Terms of Service.</p>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+    </div>
+
+  </body>
+</html>
